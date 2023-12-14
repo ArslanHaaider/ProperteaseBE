@@ -10,6 +10,7 @@ const MONGODB_URI = config.MONGODB_URI
 
 const connectDatabase = () => {
   try {
+    console.log(MONGODB_URI)
     if (MONGODB_URI != undefined || "") {
       mongoose.connect(MONGODB_URI, {
         useNewUrlParser: true,
